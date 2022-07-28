@@ -1,0 +1,89 @@
+
+		 OOP is just a way of writing code and classes and objects are the basic parts of this method
+	
+		
+		Why should we learn the OOP
+		1. Because OOP simplifies the development of programs
+		2. It makes it easy to manage and maintain large programs
+		3. OOP is built around objects classes and many other things which can help us translate real life objects into computers
+		
+		
+		
+		
+		How to write programs using OOP
+		
+		1. Create classes, inside the classes define properties/fields/attributes to translate how an object from real life looks like
+		2. Create methods/behaviors/functions to define how that thing works in real life
+		
+		
+		OOP is supported in many other programming languages like C#, PHP, Python, Javascript
+		Other than OOP we also have different paradigms--> functional programming, structural, procedural
+		// research
+		
+		
+		How do we create a class:
+		
+		class Human{
+		
+		String name;	// attributes/properties/fields
+		int age;
+		double weight;
+		char gender;
+		
+		void walk(){	//functions/behaviours/methods
+		System.out.println("I can walk");
+		}
+		
+		Methods are usually defined after attributes
+		
+		In java it is a convention to call attributes FIELDS and behaviors 
+		
+		
+		public static void main(String[] args){
+		
+		
+		Human gulbodin = new Human();
+		gulbodin.name="Sameer";
+		gulbodin.age=40;
+		gulbodin.weight=80;
+		gulbodin.gender='m'
+		
+		gulbodin.walk
+		
+		}
+		}
+		
+		
+		Rules:
+		1. 	We can define fields and methods anywhere inside the class
+		2. The sequence of execution only matters when we are in the method
+		
+		String class
+		
+		String is the most widely used class in java.
+		// Do not name your class just String (java conflict //
+		
+		
+		String name=new String("Katarina"); // Propper way of creating an object from a class
+											// Whatever is in the parentheses is assigned to var name
+		
+		String name2="Katarina";
+		Shorter way of creating an object because string class is heavily used in java programming
+		
+		All the classes in java can be treated as datatypes
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

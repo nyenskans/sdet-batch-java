@@ -1,0 +1,158 @@
+                                             CONSTRUCTORS
+
+
+In Java, constructor is a special block of code similar to methods that helps us give initial values to the fields of a class
+   It is called when an instance of a class (==object) is created and a memory space is allocated for the object
+   It is a special type of method used to initialize the object
+
+   ***If there is no constructor in a class, compiler automatically creates a default constructor --> ( new Dog() )
+
+
+
+Why we should use a Constructor:
+
+1. When we use the constructor to initialize the object it looks more readable and cleaner
+2. If the fields of a class are private it's not possible to access them outside the class without a constructor or a method
+which means we can't initialize them without method or constructor
+3. We can enforce rules like what kind of values are assigned to variables with the help of a constructor
+4. If we want to make sure that some lines of code are always  executed when the object of a class is created,
+we can put that code inside the constructor
+* They are better than methods because they are called automatically (while methods we have to call through an object of the class)
+*Most of the time fields are private so we can't access them outside of the class in which they are declared and can't initialize them,
+that's why we use constructors over methods (and the fields can't be accessed directly).
+
+Object creation syntax:
+
+Class_name reference_variable= new Class_Name()
+//
+// Test t =new Test();
+// Test ---> class Name
+// t ---> Reference variables
+//  = ---> assignment operator
+// new ---> keyword used to create object
+// Test() ---> constructor ;
+// ; ---> statement terminator
+
+
+When we create an instance of a class (object) using keyword new, a constructor for that class is called-->
+the part after keyword new is constructor and it is executing a constructor.
+
+
+How to use Constructors:
+1.We create the constructor by writing s block of code with the same name as the class name.
+2.=. We create constructors inside the class
+and when an object of that class is created, the constructor is executed automatically:
+
+class Car{
+String make;
+String model;
+    Car(String carMake, String carModel){  // This is the constructor
+    make=carMake;
+    model=carModel;
+     }
+     public static void main{
+     Car bmw=new Car("BMW", "m4"); // this is a call to the constructor we  created inside the class
+     }
+}
+
+
+
+Rules to declare a constructor:
+1. Constructor is not allowed to have a return type- not even void (They are custom data types, not simple)
+2. Constructor name must be the same as Class name
+3. Constructors can't be created with a static keyword--> static means it is always a same values
+4. We can use any access modifiers with constructors
+5. Can't have non-access
+6. If we don't create a constructor in a class a default constructor with zero parameters is created by compiler
+(It takes the code returned by us and it converts it to byte code which is easier for java to understand)
+7. it is not allowed to have two constructors in a class with same numbers of parameters and same type
+8.When we create the object of a class, then a constructor is called. For example: class name is dog- Dog dog1=new Dog();
+9. We can create multiple constructors to give other users flexibility that they dont have to provide all the values
+ to all the instance fields when creating an object of our class
+ 10. We can call the constructor of a class by using this keyword with parenthesis.
+ this() we can pass parameters and java will decide based on these parameters which constructor to call
+
+
+
+There are two types of non default constructors:
+1. Non-argument ()- empty parenthesis
+2. Parameterized
+
+public class ConstructorTypes(){
+    ConstructorTypes(){
+        Sistem.out.println("I am a non argument constructor");
+    }
+    ConstructorTypes(String str){
+        Sistem.out.println("I am a constructor with one String parameter "+str);
+    }
+}
+
+
+1.Non argument constructor:
+- a constructor that accepts no parameter
+-Inside the class if we are not declaring any constructor then compiler generates zero argument constructors
+with empty implementation at the time of compilation.
+-The compiler generated constructor is called default constructor.
+-Inside the class default constructor is invisible mode.
+The purpose of default constructor is to provide the default values to the object like 0, null etc. depending on the type.
+
+
+2. Parameterized constructor:
+If a constructor contains a list of variables (or at least one) in it's signature it is known as Parameterized-->takes parameters
+It is used to provide different values to distinct objects
+(it accepts a specific number of parameters to initialize data members of a class with distinct values.)
+
+Syntax:
+class Class_name{
+ClassName(list of parameters){
+code;
+}
+}
+Syntax to call parameterized constructor:
+Class_name reference object=new(keyword) Class_Name(value1, value2, etc);
+OR
+new Class_Name(value1, value2, etc);
+
+
+
+
+
+
+
+this. keyword:
+We use "this" keyword to access the instance variable when you have the same name for both instance and local variable
+in your method/constructor/block of code (if we don't the preferred variable by java is the local variable
+
+ *When ever we have same name variable as instance variable and local variables, this keyword can help us resolve the conflict between
+ local and instance
+
+
+this():    // not very common
+Calls the constructors of a class inside other constructors.
+We can use this() to reuse already written constructors if they contain the same code
+We want to create multiple constructors in the first place because we want to give end user flexibility
+ so that they can create objects of our class in many ways
+
+class Human{
+String name="Sleeping zombie";
+
+void printName(){
+String name="Awake zombie";
+System.out.println(this.name);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

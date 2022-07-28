@@ -1,0 +1,35 @@
+                        Polymorphism
+
+
+PolyMorphism is the ability of a method to behave differently depending on the object or parameters that we pass to the method
+Second pillar of OOP.
+
+When we pass different parameters to a method and it behaves differently it is called compile time polymorphism/early binding/
+/static polymorphism/overloading
+When we achieve polymorphism through method overriding then it is called run time polymorphism/late binding/dynamic polymorphism
+
+Polymorphism is considered one of the important features of Object-Oriented Programming.
+Polymorphism allows us to perform a single action in different ways. In other words,
+polymorphism allows you to define one interface and have multiple implementations.
+The word “poly” means many and “morphs” means forms
+
+Why we should use PolyMorphism:
+    1. Cleaner code
+    2. We prefer not to change the existing code- if we want to improve something we should always create new methods and classes
+    We can call these methods using the parent class variables/references
+    3. We can call multiple method forms many classes with the help of a single variable.
+     For example we can create an array of objects and with the help of a loop we'll be able to call all the methods from all the classes
+
+How we can use Polymorphism:
+     1. Create parent-child relationship
+     2. Override the methods in the child classes
+     3. Create array of all the child class objects and with the help of a for loop we can call all the methods from all the child classes
+
+     RULES
+
+     1. All the rules that apply for overriding apply to polymorphism as well
+     2. We can store the object of a child class inside a variable of type parent class
+     but not the reverse
+     3. We can also create arrays of type parent and they can hold the objects of child classes
+
+

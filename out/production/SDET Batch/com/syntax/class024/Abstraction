@@ -1,0 +1,82 @@
+                                    Abstraction
+
+Abstraction is a process in which only the necessary requirements are provided and the irrelevant details -- implementation details
+are disregarded (temporarily)
+(process of hiding the implementation details and only showing the functionalities)
+
+(hiding the implementation details and showing only the functionality to the user)
+
+Abstraction lets you focus on what the object does instead of how it does it
+
+Process of giving a set of guidelines to the user who is going to implement these guidelines based on their needs
+
+Concept of exposing only the functionalities
+
+-Third pillar of OOP
+
+Why we should learn Abstraction:
+    1. Reduces complexity by separating the idea from implementation
+    2. It helps us enforce rules and convey our requirements
+    3. Improves the maintainability of the system (we only change it in the class we want not the parent class--> the change only affects the desired class)
+
+
+How to use abstraction:
+    1. create classes with abstract keyword
+    2. create methods with abstract keyword (only header) without the body, inside the parent class
+    3. Create the child classes and extend those classes from parent classes and implement the abstract methods (override them)
+    4. If we don't want to provide the implementation of one or more methods in the child classes, we can declare child classes abstract also
+
+
+Examples of abstraction
+ATM, websites, coffee machine, car etc.
+
+Two types of classes:
+    1. Abstract classes
+    2. Concrete classes
+
+1. the one declared with keyword abstract and can contain defined and undefined methods
+2. the classes whose objects we can create
+
+
+                Two ways to achieve abstraction:
+                         1. abstract classes
+                          2. abstract interfaces
+
+
+
+Class can be abstract even if none of the methods are abstract
+An abstract class can contain implemented methods as well
+
+
+Either we provide the body for the method or we declare it abstract
+
+
+Rules:
+
+1. Class declared with abstract keyword is known as abstract class. Class has to be abstract if we have even just one abstract method
+2. Cannot be instantiated--> cannot have objects
+3. Undefined methods of that class are abstract methods
+4. To utilize abstract methods we have to inherit it from another class and provide implementation for those abstract methods in it
+5. If we inherit an abstract class we must provide implementation for all its the abstract methods or declare child class abstract as well
+6. An object of abstract class can only be created indirectly. It means you can create an object of abstract derived class:
+
+   Vehicle obj=new Bike() // indirect object creation // widening
+
+//  WebDriver v=new FireFox();
+//    Chrome chrome=(Chrome) Firefox();
+
+
+7. Abstract classes can't be declared final
+8. We can have everything inside an abstract class that we have in a concrete class, the only thing that differs is we cannot create objects of that class
+
+
+
+-Abstract method is one which contains only declaration or prototype but it never contains body or definition
+
+Important points:
+* We use abstract classes when we know the methods but we don't know how they would be implemented
+* Every abstract class participates in inheritance
+* Abstract class of Java always contains common features
+* Abstract class definitions should not be made final because abstract classes always participate in inheritance classes and have to be overridden
+(final classes cannot be inherited)
+

@@ -1,0 +1,32 @@
+	String Class
+
+	is used to store and manipulate character based data like numbers, alphabets and special characters
+	
+	METHODS	
+	
+	length();
+	String str=new String("Hold your horses");
+	String --> variable name/object/instance of String class
+	= --> assignment operator (the right side is assigned the left side)
+	new --> keyword for creating objects
+	String(); --> it's similar to a method; contains some java statements which are executed
+	 when object of this class is created; it's called constructor; it's a part of the class
+	 parenteses can be empty or w values
+	
+	Methods return different types of data types, some return 
+	
+	All methods marked as void only execute what is in the body but never return any data (data types)
+	
+	
+	The string variables are not going to be changed by these methods; This behaviour is specific to String type variables
+	 --> they have to be reassigned 
+	 
+	 
+	 String class is immutable == unchangable;
+	 
+	 StringBuilder class is mutable == changeable;
+	 
+	 
+	
+	
+	

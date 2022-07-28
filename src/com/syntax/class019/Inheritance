@@ -1,0 +1,34 @@
+                        INHERITANCE IN JAVA
+
+
+Inheritance is an important pillar of OOP(Object-Oriented Programming).
+It is the mechanism in java by which one class is allowed to inherit (acquires) all the features
+(properties/fields and behaviour/methods) of another class.
+
+
+* Parent cannot access the child, only vice versa
+* We can only inherit from one parent in java
+* Multiple classes can inherit from the same class (multiple child classes from one parent class)
+* Whatever changes we make to the parent class, child classes will reflect them as well
+
+
+Why we should use it:
+Helps us reduce amount of code (properties and methods which are present in many classes --> we can create only one parent class
+to contain those common properties and methods and make children classes to extend from them)
+How to use it:
+1. Create a parent class
+2. Put all the common methods and properties from children classes inside that parent class
+3. use extends keyword to inherit from that parent class
+
+
+
+RULES:
+1. Private fields and methods cannot be inherited inside children classes
+2. Constructors are not inherited --> but we can call it from the child class
+3.
+
+Types of inheritance
+1. Single inheritance
+2. Multilevel inheritance
+3. Hierarchical inheritance
+

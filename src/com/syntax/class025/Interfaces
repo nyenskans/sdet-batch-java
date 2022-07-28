@@ -1,0 +1,60 @@
+                                        Interface
+
+
+        Interface is a contract that is similar to a class but all the fields inside it are public static final (constants),
+  and all the methods by default are public and abstract.
+  By default Interfaces are abstract
+
+     Why we should use it:
+
+     We can implement abstraction using interfaces
+  When classes are logically connected to each other and we want to have instance fields and implemented methods as well while doing
+  abstraction then we should go with abstract classes (because then we can take advantage of inheritance)
+
+
+
+RULES:
+
+1. All the fields inside an interface are public static and final
+2. No instance fields means no constructor is required
+3. No instance methods, and all methods are abstract by default
+4. When we implement the methods from the interface to a class we use implements keyword
+5. Multiple inheritance is supported by interfaces in java
+6. An interface can extend another interface
+
+** A class uses extends keyword to inherit another class
+** A class uses implements keyword to inherit/implement an interface
+** An interface uses extends keyword to inherit/implement an interface
+
+
+* When classes are logically connected we use abstract classes
+  When we just want to achieve abstraction we use interfaces
+
+By default all fields will be public static final, no need to write those keywords
+
+
+By default Interfaces are abstract
+Methods are by default abstract
+
+
+
+
+
+
+                                Abstract class vs Interface
+
+- Abstract keyword used to declare abstract class                 Interface keyword used to declare
+- Does not support multiple inheritance                           Supports multiple inheritance
+- Contains constructors                                           Doesn't contain constructors
+- Contains both incomplete (abstract) members                     Contains only incomplete members (signature only)
+  and complete members                                            Can only have abstract methods (Since Java 8, can have also
+- Can have both incomplete (abstract) methods and                 static an default  methods)
+  non-abstract methods                                            Cannot have access modifiers, by default everything is
+- Can contain access modifiers for methods and variables          assumed as public
+  (properties)
+- Can have final, static and non-static variables                 Can only have public final static variables
+- May contain a variable or a constant                            Can only have constants
+- Default access modifier of abstract class methods is default    Default access modifier of an interface is public
+- No restriction like initialization of variables at the time     It is compulsory to initialize a variable at the time of creation
+  of declaration (can be initialized later on)
+- No restriction for abstract class method modifiers              Methods cannot be declared protected, private or final

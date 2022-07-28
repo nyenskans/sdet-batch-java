@@ -1,0 +1,36 @@
+			Actual differences between Primitive and Non primitive data types:
+
+How primitive values work:
+
+	int num=10;
+	
+	
+	Area called Stack:	
+	String s="USA"
+	
+	Area called Heap:
+	A memory cell is reserved and an address is assigned for this variable
+	(cell) 11 "USA"
+	
+	String s2="USA"
+	The program will search through memory and see if there is already a value like this saved in memory
+	another variable with same value--> there wont be another memory cell assigned to this var, but the same cell 11 will be assigned to it
+		// This approach saves memory but it's slow
+	
+	
+	How non primitive values work:
+	
+	
+	 For creating
+	String builder st="Katarina";
+	
+	no memory search is done; it goes directly to Heap and creates a memory cell
+	
+	
+	
+	
+	
+	
+	
+	
+	

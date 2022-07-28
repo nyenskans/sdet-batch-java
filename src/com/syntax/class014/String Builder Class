@@ -1,0 +1,45 @@
+
+					String Builder class
+
+
+Creating a variable of string class:
+		String s=new String("I am a student");
+				System.out.println(s.toUpperCase());
+		
+Creating a variable of string builder class:
+		StringBuilder str=new StringBuilder("I am a syntax student");
+								System.out.println(str.reverse());
+				
+
+	String and string builder are both classes which we can use to store and manipulate characters.
+
+!	String is immutable // cannot be changed by methods
+!	String builder is immutable // can be changed by methods
+
+
+
+	StringBuilder in Java is a class used to create a mutable, 
+	or in other words, a modifiable succession of characters.
+	Like StringBuffer, the StringBuilder class is an alternative to the Java Strings Class, 
+	as the Strings class provides an immutable succession of characters.
+	
+	
+	
+	If we call a method on the String variable, it doesn't change the variable (they only change if we reassign them
+	If we call a method on the String builder variable, it changes the variable 
+	
+	
+	
+	When we make a lot of changes to a string variable, java creates multiple copies inside your memory
+	and because of this, for every change a new variable is created
+	So when we know we will be changing the variable a lot, we should use String builder class variable 
+	because each change will be reflected in that same variable instead of creating a new one
+	
+	
+	
+	
+	
+	
+	
+	
+	

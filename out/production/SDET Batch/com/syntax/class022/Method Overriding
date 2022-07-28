@@ -1,0 +1,46 @@
+
+                                Method overriding
+
+
+When a same method with a same header (name and parameters) exists in the child class as well as parent, but with a different body (code)
+
+
+Reasons to ude Overriding:
+    If we inherit all the method from a class (which are not private) they are inherited in the child class. If for some reason some  of those methods
+    doesn't work for us, we can simply override them  to provide our own implementation.
+    (If they are inefficient, consume a lot of memory, are slow etc)
+
+
+Conditions for Method Overriding:
+    1. we must first inherit from a class
+    2. we must redeclare the method with same return type and provide the body of our choice
+    3. we can't change access modifier to private
+
+    Example
+
+ class Parent{
+    void eat(){
+    System.out.println("I like to eat broccoli");
+    }
+    void sleep(){
+        System.out.println("I like to sleep a lot");
+    }
+}
+
+class Child extends Parent{
+    void eat(){
+    System.out.println("I like to eat pizza"); // overriding
+    }
+}
+
+
+
+Rules for Method overriding:
+
+    1. We must have a super class- subclass relationship
+    2. Method in parent and child class must have same headers
+    3. Can have different access modifiers
+    4. In very rare cases they can have different return types
+    5. We can't change the access modifiers from public to protected/default But we can change it to public from protected/default
+    6. We cannot override constructors because they are not inherited
+    7. A static method cannot be overridden but can be redeclared  (!!!) (It is exactly the same thing, just different terminology)

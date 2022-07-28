@@ -1,0 +1,39 @@
+                            Type casting in Java
+
+
+ Assigning value of one type to a variable of another type is called Type casting.
+
+ There are two types of casting in java:
+        1. Widening / UpCasting (implicit / automatic) casting- Converting lower data type into higher
+        (for primitive data types the example for UpCasting is converting byte to int -->
+        --> int a = 1;)
+        2. Narrowing / DownCasting (explicit / manual) casting- Converting higher data type into lower
+        (for primitive data types example for DownCasting is converting double to int -->
+        --> int a = (int) 10.99;)
+
+ Type Casting in non-primitive data types in Java:
+              Object                   upcasting/widening
+
+               Animal
+         (silently extends Object)
+
+              Mammal
+          (extends Animal)
+
+         Dog          Cat
+  (extends Animal) (extends Animal)     downcasting/narrowing
+
+
+  Upcasting: Casting from a subclass to a superclass is called upcasting.
+  Downcasting: Casting from a superclass to a subclass.
+
+
+  Parent       Parent p = new Child()        // upcasting
+     |
+     |
+    extends     Child c = new Parent()        // trying to downcast
+     |           (compile time error)
+     |
+   Child        Parent p = new Child();
+                Child c = (Child)p;           // downcasting
+                 (allowed because p prefers child in this case)

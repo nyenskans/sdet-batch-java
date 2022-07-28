@@ -1,0 +1,32 @@
+
+                        Types of variables
+
+
+1. Variables inside of classes but outside any block of code are called instance variables
+
+2. Variables inside blocks of code (loop, switch, if else condition) or inside methods are called local variables
+Also if they are a part of method's parameters, they are local
+
+3. Static variables (with keyword static in front of data type--> static String name="Katarina")
+Static variable in Java is a variable which belongs to the class and is initialized only once at the start of the execution.
+ It is a variable which belongs to the class and not to object(instance ).
+Static variables are initialized only once, at the start of the execution.
+
+
+Using the proper types of variables helps with:
+
+1. reducing the amount of RAM the application uses
+2. with the help of these vars we can pass information between methods of class
+3. local variables occupy the memory for the shortest period of time-
+-as soon as the method is done they are destroyed by a special program (garbage collector)
+
+
+
+How to use:
+
+Instance: create inside of class but outside any block of code or method
+Local: create inside block of code
+Static- just adding keyword static
+We can call them without creating an object of a class
+We can share a single value between all the objects of a class
+  //  static variables are available to all the objects of the same class

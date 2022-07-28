@@ -1,0 +1,27 @@
+                        Method Overloading
+
+
+Naming methods and classes is very important in development and they should always be meaningful.
+
+Existence of multiple methods in the same class can have the same name with different parameters (different types of parameters/
+different number of parameters/ different sequence of parameters) is known as method overloading.
+
+Instead of defining two methods that should do the same thing, it is better to overload one.
+
+ Multiple methods can have the same name as long as the number and/or type of parameters are different.
+
+Java does not allow overloading by changing the return type only, though overloaded methods can have different return types.
+
+There are three ways to overload the method in
+java:
+1. By changing number of parameters
+2. By changing the data type
+3. By changing the sequence/order of parameters
+
+Advantages:
+1. Code cleanliness
+2. Increases the readability of the program
+3. Flexibility
+4.Overloaded methods give programmers the flexibility
+  to call a similar method for different types of data
+

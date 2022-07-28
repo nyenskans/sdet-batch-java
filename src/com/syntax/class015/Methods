@@ -1,0 +1,59 @@
+            METHODS
+
+Method in java is a block of code (group of java statements).
+It defines the behavior of a class.
+
+    Why we use methods?
+   1. They help remove duplicate code (reduce redundancy) from our program. We just create a method once
+    and every time we need that logic we just call that method that contains the logic
+   2. They allow us to write code in the form of modules which makes the development of large applications easier.
+
+   How to use methods:
+   1. First we create a method inside the class
+   2. We create an object of that class
+   3. We call the method by writing the name of the object .  name of the method ()
+
+Creating a method:
+
+class Calculator{ //creating class Calculator
+ void add(int x, int y){ // void because the method doesn't return anything
+System.out.println(x+y); // code we want the method to execute
+ }
+public static void main(String[] args){
+Calculator calculator= new Calculator(); //creating an object calculator of class Calculator
+calculator.add(10,20);
+}
+}
+
+
+                        Rules to create and use methods:
+
+1. Every method must have a return type. void --> When the method doesn't return anything
+ int, String, etc --> when a method has a specific type of data (return) we use the data type name
+
+ 2. add--> next we write a name of the method which can be anything- it should follow the rules for giving a name to a variable
+
+ 3. (int x, int y) --> We specify the parameters within the parenthesis (if there are any). We can pass any type of data inside the parenthesis
+ *(for example, the return type of a method can be int but the parameters can be String, etc).
+ They are optional.
+ 4. Body of the method--> Java statements/block of code we want to execute when calling the method:
+ {
+ System.out.println(x+y);
+  }
+ 5. add(int x, int y)--> This part is called signature of a method
+ 6. void add(int x, int y)--> This part is called header of a method
+
+7. Return statement must be the last statement in the method
+
+8. Only one return statement can be declared in a method (unless there is an if else condition/switch)
+
+9. Data type of the return type must match the method's declared type
+
+10. You can call the method with its name only
+
+11. The method must have a body
+
+12.If the method has n numbers of parameters then its a must to pass all n arguments when the
+ *When we are naming a method we should try to name it something that will tell us what it does
+
+

@@ -1,0 +1,16 @@
+                            Encapsulation
+
+
+Encapsulation is a mechanism that provides us security. Fourth pillar of OOP
+Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit.
+It is achieved in java by class concept
+
+Combining of state and behavior in a single container is known as encapsulation
+
+In encapsulation, the variables of a class will be hidden from other classes,
+and can be accessed only through the methods of their current class.
+It is also known as data hiding
+
+How we should use it:
+    1. make your variables private
+    2. create setter and getter methods to read and write these fields

@@ -1,0 +1,68 @@
+
+Maps:
+
+Map is an interface in java that allow us store key value pairs
+Used widely in practice
+They can't contain duplicate keys but can have duplicate values
+Syntax:
+        Map<KeyDataType, ValueDataType> mapName=new Map<>();
+  * First dataType is always key and second always value;
+  * no limitations on data types that can be connected;
+  * Keys can't be duplicate, values can
+
+There are many types of maps, but we will discuss only 3:
+1) HashMap
+2) LinkedHashmap
+3) TreeMap
+
+HashMap:
+    Sorting and insertion will happen according to the Keys
+    Most commonly used
+    Upside: it is the fastest of all when it comes to retrieving and inserting elements
+    Downside: Insertion order is not maintained
+  * no get() method because there are no indexes.
+    We can access the elements using for loop or Iterator
+
+LinkedHashMap:
+    Upside: Insertion order is maintained
+    DownSide: retrieval of element will be the slowest
+   * insertion speed slower than HashMap;
+
+TreeMap:
+    UpSide: Elements will always be in sorted form
+    Downside: insertion speed is slowest of all (because of sorting the data)
+    Retrieval Speed: better than linkedHashMap but slower than HashMap.
+  * Mostly used to remove duplicates
+
+
+
+Choose a proper data structures:
+    1. store unique names in sorted form:   TreeSet
+
+    2. Store names of students and perform a lot of operations related to data retrieval: ArrayList
+
+    3. Store item names and their prices, and maintain insertion order
+
+
+    HashTable:
+            not used a lot, it's slow
+            Provides thread safety
+
+
+
+        We can use 3 methods to get data from a map:
+
+1. entrySet(): key, value stored inside of an object of type Map.Entry
+We can use getKey() on this object to get the key of that entry and getValue() to get the value of that entry
+2. keySet(): returns all the keys from a map in a form of a set
+3. values(): returns all the values from a map in the form of a collection
+
+
+
+
+
+
+
+
+
+

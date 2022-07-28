@@ -1,0 +1,20 @@
+What is super keyword
+Used to refer to parent class object
+
+Why we should use it:
+1. If we have same name variable or method in the super/parent/base
+ then we can use the super keyword to refer to parent class or variable ore method because
+  by default java prefers the variable of the child class. We can also
+ 2.
+
+
+
+
+
+ Rules:
+
+
+
+4. If we have multiple constructors inside parent class, we have to match only one (any) in the child class (we do not need to match all of them
+Also--> any constructor can be matched and it doesn't have to be the one with the most parameters
+5. super() should be the first line inside a constructor

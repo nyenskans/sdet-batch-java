@@ -1,0 +1,47 @@
+                    Method overloading
+
+ With the help of method overloading , we can have multiple methods with the same name but different parameters
+
+ Advantages of using it:
+ 1. Cleaner, more readable code
+ 2. flexibility for the end user
+
+ How to do it:
+ 1. Change the data type of parameters
+ 2. Change the number of parameters
+ 3. Change the order of parameters
+
+ Class Calculator{
+
+ int method(int num1, int num2){
+ return num1+num2;
+ }
+ int method(int num2, int num1){ //3.
+ return num2+num1;
+ }
+ int method(double num1, double, num2){ // 1.
+ return
+ }
+ int method(int num1, int num2, int num3){ // 2.
+  return num1+num2;
+  }
+ }
+
+
+ Rules:
+
+ 1. Methods should have same name but different parameters
+ 2. We cannot overload a method just by changing the return type
+ 3. We can overload a constructor by following the same rules
+
+
+
+
+
+
+
+
+
+
+
+

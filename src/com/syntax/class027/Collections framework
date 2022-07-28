@@ -1,0 +1,56 @@
+                Collections framework
+What it is:
+    A collection of interfaces and classes that have many methods to store and manipulate real life day to day data
+
+Why we should learn it:
+    Collections framework contains the classes that have pre-built methods to store and manipulate data.
+    These methods are battle tested (proven, reliable) ( very well tested and we can easily use them in production environment)
+
+How we can use it:
+    They are same classes just like any other class in java. We create the object of the class and start calling
+    the methods, we just need to inset the diamond operators <> adn provide the data type.
+    We need to insert the (datatype) name of the class within <> whose objects we will be storing inside these classes.
+    They cannot use primitive data types (but we can use  Wrapper classes for those primitives).
+
+Syntax example:
+    ArrayList <String> objName=new ArrayList<>(); ->constructor call
+                ^ generics
+
+Wrapper classes
+    Wrapper classes are special classes built to work with collections framework which are replicas of primitive data types
+    They allow us to use primitives as objects. We can use them just like any other class (they can have it's methods, can get instantiated, etc)
+
+
+Boxing and UnBoxing
+    1. Boxing is Converting primitive data type to its corresponding non primitive wrapper class
+    This conversion can happen automatically (autoboxing) or we can call explicit methods to convert them (e.g. int to Integer)
+    In autoboxing we just assign the data and it's converted automatically.
+    In explicit boxing we need to call autoboxing.
+
+    2. Unboxing is the reverse process - converting Non primitive wrapper class into its corresponding primitive data type.
+    Automatic (autoUnboxing) and explicit (unboxing)
+
+
+Downsides of collections framework:
+    1) We need to use Wrapper classes with collections framework
+    2) Wrapper classes occupy 4 times more memory as compared to primitive dataTypes
+    (Although as a tester we don't need to worry too much about these classes-it is mostly a concern for developers)
+
+  ----------------------------------------------
+
+ List is the first interface that we will be using from the collections framework. Properties:
+
+ 1. We can store duplicate data in list;
+ 2. It maintains the insertion order
+
+
+
+ Difference between ArrayList and LinkedList
+ ArrayList:
+     Upside:Retrieval(get operation) of elements is super Fast
+     DownSide:Adding elements in the middle or start will be very expensive.
+ LinkedList:
+     Upside:whenever we have to insert the data randomly not at the last index we should be using
+     linkedList.
+     retrieval is super, super slow if the list is big.
+
